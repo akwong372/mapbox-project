@@ -16,6 +16,7 @@
 		A5AD9BA528EA7B54000E5855 /* mapbox_takehome1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD9BA428EA7B54000E5855 /* mapbox_takehome1Tests.swift */; };
 		A5AD9BAF28EA7B54000E5855 /* mapbox_takehome1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD9BAE28EA7B54000E5855 /* mapbox_takehome1UITests.swift */; };
 		A5AD9BB128EA7B54000E5855 /* mapbox_takehome1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AD9BB028EA7B54000E5855 /* mapbox_takehome1UITestsLaunchTests.swift */; };
+		A5AD9BBF28EA7BB5000E5855 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = A5AD9BBE28EA7BB5000E5855 /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AD9BBF28EA7BB5000E5855 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "mapbox takehome1";
+			packageProductDependencies = (
+				A5AD9BBE28EA7BB5000E5855 /* MapboxMaps */,
+			);
 			productName = "mapbox takehome1";
 			productReference = A5AD9B8A28EA7B52000E5855 /* mapbox takehome1.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = A5AD9B8128EA7B52000E5855;
+			packageReferences = (
+				A5AD9BBD28EA7BB5000E5855 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = A5AD9B8B28EA7B52000E5855 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -596,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5AD9BBD28EA7BB5000E5855 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5AD9BBE28EA7BB5000E5855 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5AD9BBD28EA7BB5000E5855 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5AD9B8228EA7B52000E5855 /* Project object */;
 }
